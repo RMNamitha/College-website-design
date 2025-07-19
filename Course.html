@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our courses</h1>
+</section>
+<!---Course---->
+<section class="course">
+    <h1>Courses We offer</h1>
+    <p>Explore our diverse range of industry-aligned courses designed to build strong foundations and future-ready skills.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Engineering</h3>
+            <p>Engineering is the application of scientific and mathematical principles to design, develop, and improve structures, systems,<br>
+                 and technologies. It encompasses a wide range of disciplines such as Mechanical, Civil, Electrical, and Computer Science Engineering.<br>
+                  Engineers play a vital role in solving real-world problems and driving innovation across industries.<br>
+                 The field is essential for infrastructure development, technological advancement, and improving quality of life.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+                
+            <p>A Bachelor's degree in Engineering (B.E. or B.Tech) is a four-year undergraduate program that provides<br>
+                 foundational knowledge and practical skills in a specific engineering field. Students study core subjects, undertake lab work, and engage in projects<br>
+                  to understand how theoretical concepts apply to real-world scenarios. The degree equips graduates with the technical expertise needed for entry-level jobs in engineering and technology sectors. <br>
+                It also lays the groundwork for higher studies and professional certifications</p>
+        </div>
+        <div class="course-col">
+            <h3>Post graduation</h3>
+            <p>Post-graduation in engineering, such as M.E., M.Tech, or M.S., is a two-year advanced program pursued after completing a bachelor's degree.<br>
+                 It allows students to specialize in a specific area like Artificial Intelligence, Data Science, VLSI, or Structural Engineering. This level of study involves in-depth coursework, research,<br>
+                  and often a thesis or project. A postgraduate<br>
+                 degree enhances career prospects by qualifying individuals for higher-level roles in research, academia, and specialized industry positions.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-------Facilities------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our facilities include advanced laboratories, digital classrooms, a well-stocked library, sports arenas, and comfortable hostels to support holistic development.
+    </p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="library.png">
+            <h3>LIBRARY</h3>
+            <p>Our library houses a vast collection of academic books, journals, e-resources, and research materials across all disciplines.
+             It provides a quiet and comfortable space for reading, learning, and project work.
+             Students also have access to digital databases and online journals to support research and assignments.</p>
+
+        </div>
+        <div class="facilities-col">
+            <img src="basketball.png">
+            <h3>SPORTS</h3>
+            <p>The campus promotes fitness and team spirit through well-maintained sports facilities for cricket, football, basketball, and more.
+              Indoor games like table tennis, chess, and badminton are also available.
+                Regular tournaments and events encourage active participation and healthy competition among students.</p>
+
+        </div>
+        <div class="facilities-col">
+            <img src="cafeteria.png">
+            <h3>CAFETERIA</h3>
+            <p>Our cafeteria offers a wide range of hygienic and affordable food options to cater to diverse tastes.
+               It’s a lively space for students to relax, interact, and unwind between classes.
+               With clean seating areas and a friendly atmosphere, it ensures a refreshing break during the day.
+
+            </p>
+
+        </div>
+    </div>
+</section>
+<!--Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a forward-thinking institution dedicated to academic excellence, innovation, and holistic student development.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+
+    </div>
+    <p>Made By <i class="fa fa-heart-o"></i> Namitha</p>
+</section>
+
+
+<!--------JavaScript for Toggle Menu---->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+    
+</body>
+</html>
